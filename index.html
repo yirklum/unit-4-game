@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Star Wars RPG Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Bungee+Inline|Monoton" rel="stylesheet">
+
+        <script src="assets/javascript/game.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>Star Wars RPG Game</header>
+
+            <div class="row" id="character-list">
+                <div class="col-md-12">
+                    <div class="character character-choice" id="kylo-ren">
+                        <h3>Kylo Ren</h3>
+                        <img src="assets/images/kylo-ren-matt.jpeg" alt="Kylo Ren">
+                        <p class="health">Health: 150</p>
+                        <p>Attack Strength: 15</p>
+                    </div>
+                        
+                    <div class="character character-choice" id="porg" >
+                        <h3>Porg</h3>
+                        <img src="assets/images/porg.jpeg" alt="Porg">
+                        <p class="health">Health: 200</p>
+                        <p>Attack Strength: 35</p>
+                    </div>
+                        
+                    <div class="character character-choice" id="lando-calrissian">
+                        <h3>Lando Calrissian</h3>
+                        <img src="assets/images/lando.jpeg" alt="Lando Calrissian">
+                        <p class="health">Health: 120</p>
+                        <p>Attack Strength: 20</p>
+                    </div>
+
+                    <div class="character character-choice" id="princess-leia">
+                        <h3>Princess Leia</h3>
+                        <img src="assets/images/leia.jpeg" alt="Princess Leia">
+                        <p class="health">Health: 160</p>
+                        <p>Attack Strength: 40</p>
+                    </div>
+
+                    <div class="character character-choice" id="darth-vader">
+                        <h3>Darth Vader</h3>
+                        <img src="assets/images/dark-helmet.jpeg" alt="Dark Helmet">
+                        <p class="health">Health: 90</p>
+                        <p>Attack Strength: 10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" id="enemy-list">
+                    <h3>Choose An Enemy</h3>
+                </div>
+            </div>
+
+            <div class="row battle">
+                <div class="col-md-1">
+                </div>
+                
+                <div class="col-md-4" id="selected-character">
+                    <h3>Your Character</h3>
+                </div>
+                    
+                <div class="col-md-2 attack">
+                    <button id="attack-button">Attack!</button>
+                </div>
+                        
+                <div class="col-md-4" id="current-enemy">
+                    <h3>Enemy Fighter</h3>
+                </div>
+                        
+                <div class="col-md-1">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="col-md-4" id="stats">
+                    <h3>Stats</h3>
+                </div>
+
+                <div class="col-md-4">
+                    <div id="instructions"></div>
+                    <button id="restart">Replay</button>
+                </div>
+            </div>
+        
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>

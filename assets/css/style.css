@@ -1,0 +1,61 @@
+body {
+    background-image: url("../images/star-wars-wallpaper.jpeg");
+    background-size: cover;
+}
+
+header {
+    color: yellow;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bungee Inline', cursive;
+    margin-top: 35px;
+}
+
+.character-choice img {
+    height:175px;
+    display: inline-block;
+}
+
+.character-choice {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+
+#selected-character img {
+    height: 175px;
+}
+
+#selected-character {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+
+#current-enemy img {
+    height: 175px;
+}
+
+#current-enemy {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+
+#enemy-list img {
+    height: 175px;
+}
+
+#enemy-list {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+
+.attack {
+    display: inline-block;
+}
