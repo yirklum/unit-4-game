@@ -8,6 +8,10 @@ var characterSelected = false;
 var enemySelected = false;
 var gameOver = false;
 
+// Add sound
+
+var lightSaber = new Audio("sound/light-saber.wav");
+
 // Character Objects
 
 var kyloRen = {
@@ -125,6 +129,7 @@ $(document).ready(function() {
                 $("#current-enemy").append(this);
             }
         }
+        $("audio#kylo-sound")[0].play();
     });
 
     $("#porg").on("click", function () {
@@ -145,6 +150,7 @@ $(document).ready(function() {
                 $("#current-enemy").append(this);
             }
         }
+        $("audio#porg-sound")[0].play();
     });
 
     $("#lando-calrissian").on("click", function () {
@@ -165,6 +171,7 @@ $(document).ready(function() {
                 $("#current-enemy").append(this);
             }
         }
+        $("audio#lando-sound")[0].play();
     });
 
     $("#princess-leia").on("click", function () {
@@ -185,6 +192,7 @@ $(document).ready(function() {
                 $("#current-enemy").append(this);
             }
         }
+        $("audio#leia-sound")[0].play();
     });
 
     $("#darth-vader").on("click", function () {
@@ -205,6 +213,7 @@ $(document).ready(function() {
                 $("#current-enemy").append(this);
             }
         }
+        $("audio#dark-sound")[0].play();
     });
 
     // Set up the attack function
@@ -228,6 +237,7 @@ $(document).ready(function() {
                     gameOver = true;
                     $("#instructions").html("You were vanquished. Would you like to try again?");
                     $("#restart").show();
+                    $("audio#lose-sound")[0].play();
                 }
             }
             else {
@@ -241,8 +251,10 @@ $(document).ready(function() {
                     gameOver = true;
                     $("#instructions").html("You have saved the galaxy! Would you like to play again?");
                     $("#restart").show();
+                    $("audio#win-sound")[0].play();
                 }
             }
+            $("audio#light-saber")[0].play();
         }
         else if (!characterSelected && !gameOver) {
             $("#instructions").html("Choose your character.");
