@@ -52,6 +52,9 @@ function loadCharacter(selectedCharacter) {
     yourCharacter.health = selectedCharacter.health;
     yourCharacter.attack = selectedCharacter.attack;
     yourCharacter.baseAttack = selectedCharacter.baseAttack;
+    $("#selected-character").css("display", "inline-block");
+    $("#current-enemy").css("display", "inline-block");
+    $(".attack").css("display", "inline-block");
 }
 
 // Set up enemy character
@@ -85,6 +88,9 @@ function resetGame() {
     $("#character-list").html(choices);
     $("#instructions").empty();
     $("#restart").hide();
+    $("#current-enemy").css("display", "none");
+    $("#selected-character").css("display", "none");
+    $(".attack").css("display", "none");
     
     enemiesDefeated = 0;
     characterSelected = false;

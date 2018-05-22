@@ -1,19 +1,27 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background-image: url("../images/star-wars-wallpaper.jpeg");
     background-size: cover;
+    margin-bottom: 75px;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1;
+}
+
+.container {
+    min-height: 100%;
 }
 
 header {
     color: yellow;
     text-align: center;
-    font-size: 50px;
+    font-size: 56px;
     font-family: 'Bungee Inline', cursive;
     margin-top: 35px;
-}
-
-.character-choice img {
-    height:175px;
-    display: inline-block;
+    padding: 10px;
 }
 
 .character-choice {
@@ -21,9 +29,11 @@ header {
     text-align: center;
     width: 200px;
     display: inline-block;
+    margin: 25px 5px;
+    border: solid 5px gray;
 }
 
-#selected-character img {
+img {
     height: 175px;
 }
 
@@ -31,31 +41,89 @@ header {
     background-color: white;
     text-align: center;
     width: 200px;
-    display: inline-block;
-}
-
-#current-enemy img {
-    height: 175px;
+    display: none;
+    position: absolute;
+    left: 350px;
+    top: 250px;
+    border: solid 5px blue;
+    height: 360px;
 }
 
 #current-enemy {
     background-color: white;
     text-align: center;
     width: 200px;
-    display: inline-block;
+    display: none;
+    border: solid 5px red;
+    height: 360px;
+    position: absolute;
+    top: 250px;
+    left: 700px;
 }
 
-#enemy-list img {
-    height: 175px;
+#character-list {
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 #enemy-list {
     background-color: white;
-    text-align: center;
     width: 200px;
+    text-align: center;
+    margin: 15px 5px;
+    float: left;
     display: inline-block;
+    margin-right: 25px;
+    border: solid 5px #10d828;
 }
 
 .attack {
-    display: inline-block;
+    display: none;
+    float: left;
+    position: absolute;
+    top: 425px;
+    left: 575px;
+}
+
+#attack-button {
+    font-size: 20px;
+    border-radius: 8px;
+    border: solid 3px yellow;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.battle {
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 15px;
+}
+
+#instructions {
+    background-color: white;
+    height: 20px;
+    width: 75%;
+    margin-left: 50px;
+    padding: 10px;
+    font-family: 'Source Code Pro', monospace;
+    color: green;
+    background-color: black;
+}
+
+#message {
+    position: absolute;
+    bottom: 190px;
+}
+
+#restart {
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: solid 3px yellow;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h3 {
+    font-family: "Monoton";
 }
